@@ -1,0 +1,16 @@
+server:
+  port: 9000
+spring:
+  main:
+    banner-mode: off
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+  datasource:
+    driver-class-name: "org.postgresql.Driver"
+    platform: postgres
+    cache:
+      provider_class: org.hibernate.cache.internal.NoCacheProvider
+    url: jdbc:postgresql://localhost:5432/fs-test?createDatabaseIfNotExist=true
+    show_sql: true
