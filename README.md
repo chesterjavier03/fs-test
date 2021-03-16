@@ -1,7 +1,5 @@
 # fs-test
 
-This project is a showcase of a CRUD implementation and API integration with Facebook (https://developers.facebook.com/docs/facebooklogin/manually-build-a-login-flow).
-
 ## Getting Started
 
 Run the jar file _**fs-test-1.0.0.jar**_
