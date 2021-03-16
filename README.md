@@ -1,6 +1,4 @@
-# First Shoshin Technical Assignment
-
-### fs-test
+# fs-test
 
 This project is a showcase of a CRUD implementation and API integration with Facebook (https://developers.facebook.com/docs/facebooklogin/manually-build-a-login-flow).
 
