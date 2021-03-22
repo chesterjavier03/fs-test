@@ -63,33 +63,4 @@ public class FsTestService {
 		delete.where(fsTestId);
 		em.createQuery(delete).executeUpdate();
 	}
-
-	/**
-	 * Strictly followed
-	 * (https://developers.facebook.com/docs/facebooklogin/manually-build-a-login-flow)
-	 * <p>
-	 * Alternative on doing this requirement is to create a separate client application to handle the login flow of facebook (React app)
-	 *
-	 */
-	public String facebookLogin() {
-		RestTemplate restTemplate = new RestTemplate();
-		try {
-			return restTemplate.getForObject(String.format("https://www.facebook.com/v10.0/dialog/oauth?client_id=%s&display=popup&response_type=token&redirect_uri=%s&state=%s",
-					"1336848609802188", "https://www.facebook.com/connect/login_success.html", "st=state123abc,ds=123456789"), String.class);
-		} catch (HttpClientErrorException e) {
-			log.error("ERROR", e.getRawStatusCode() + " - " + e.getStatusCode().getReasonPhrase());
-			log.error("ERROR", e.getLocalizedMessage());
-		}
-		return null;
-	}
-
-	/**
-	 * NO SIGNUP FUNCTION ON THE URL PROVIDED
-	 * (https://developers.facebook.com/docs/facebooklogin/manually-build-a-login-flow)
-	 * <p>
-	 * Alternative on doing this requirement is to create a separate client application to handle the login flow of facebook (React app)
-	 */
-	public String facebookSignup() {
-		return null;
-	}
 }
