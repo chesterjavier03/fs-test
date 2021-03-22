@@ -1,4 +1,4 @@
-#First Shoshin Technical Exam
+# First Shoshin Technical Exam
 
 _**(NOTE: JAVA DEV EXAM.pdf) Used other HTTP Methods available (GET, DELETE and PUT) and not using POST to all endpoints :) **_
 
@@ -16,6 +16,3 @@ _**NOTE:**_
 
 - Used swagger for api documentation
 - Environment has Postgresql up and running (_**Required**_)
-
-
-_**NOTE: (TO THE JAVA DEV EXAM.pdf CREATOR) USING **_
