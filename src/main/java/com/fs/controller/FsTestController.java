@@ -64,24 +64,4 @@ public class FsTestController {
 		return Optional.ofNullable(fsTestService.fetchAllId()).map(result -> new ResponseEntity(result, HttpStatus.OK))
 				.orElse(new ResponseEntity("No data found", HttpStatus.NOT_FOUND));
 	}
-
-	/**
-	 * Strictly followed (https://developers.facebook.com/docs/facebooklogin/manually-build-a-login-flow) from the technical exam documentation
-	 */
-	@PostMapping(path = "/fb-login", consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.TEXT_HTML_VALUE)
-	@ResponseBody
-	public String fbLogin(@RequestBody FsTestFbDto fsTestFbDto) {
-		log.info("[FsTestController] - Execute Facebook login......");
-		return fsTestService.facebookLogin();
-	}
-
-	/**
-	 * Strictly followed (https://developers.facebook.com/docs/facebooklogin/manually-build-a-login-flow) from the technical exam documentation
-	 */
-	@PostMapping(path = "/fb-signup", consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.TEXT_HTML_VALUE)
-	@ResponseBody
-	public String fbSignUp(@RequestBody FsTestFbDto fsTestFbDto) {
-		log.info("[FsTestController] - Execute Facebook signup......");
-		return fsTestService.facebookSignup();
-	}
 }
