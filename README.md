@@ -1,6 +1,6 @@
 # First Shoshin Technical Exam
 
-_**(NOTE: JAVA DEV EXAM.pdf) Used other HTTP Methods available (GET, DELETE and PUT) and not using POST to all endpoints :) **_
+_**(NOTE: JAVA DEV EXAM.pdf) Used other HTTP Methods available (GET, DELETE and PUT) and not using POST to all endpoints :)**_
 
 ## Getting Started
 
