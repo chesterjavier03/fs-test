@@ -1,7 +1,5 @@
 # FSHC
 
-_**(NOTE: JAVA DEV EXAM.pdf) Used all HTTP Methods available (GET, POST, DELETE and PUT) :)**_
-
 ## Getting Started
 
 Run the jar file _**fs-test-1.0.0.jar**_
