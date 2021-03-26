@@ -1,4 +1,4 @@
-# First Shoshin Technical Exam
+# FSHC
 
 _**(NOTE: JAVA DEV EXAM.pdf) Used all HTTP Methods available (GET, POST, DELETE and PUT) :)**_
 
